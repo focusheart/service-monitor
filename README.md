@@ -1,6 +1,8 @@
 # Service Monitor
 
-Simple monitor for web applications
+Simple monitor for web applications.
+
+This is a little program for learning Python and Flask long time ago.
 
 ## Usage
 
