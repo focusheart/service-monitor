@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}Service Manager{% endblock %}
+{% block body %}
+<style>
+img { width: 120px; height: 80px; }
+</style>
+<table class="table table-striped">
+  <tr>
+    <th width="130px">Service</th>
+    <th width="65%">&nbsp;</th>
+    <th>Status</th>
+    <th>Actions</th>
+  </tr>
+  {% for srv in services %}
+  <tr>
+    <td><img src="{{ srv['info']['img'] }}"></td>
+    <td>
+      <b>{{ srv['info']['name'] }}</b> | 
+      Go to <a href="{{ srv['info']['url'] }}">{{ srv['info']['url'] }}</a><br/>
+      {{ srv['info']['desc'] }}</td>
+    <td>
+    {% if srv['info']['status']=='running' %}
+      <span class="glyphicon glyphicon-check"></span>
+    {% elif srv['info']['status']=='unknown' %}
+      <span class="glyphicon glyphicon-off"></span>
+    {% else %}
+    {% endif %} {{ srv['info']['status'] }}
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

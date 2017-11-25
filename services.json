@@ -1,0 +1,19 @@
+[{
+    "skey": "myself",
+    "info": {
+        "img": "/static/img/alading.png",
+        "name": "Service Monitor",
+        "desc": "Watch services",
+        "url": "http://localhost:50303",
+        "status": "unknown"
+    }
+}, {
+    "skey": "www.xjtu.edu.cn",
+    "info": {
+        "img": "/static/img/xjtu.png",
+        "name": "Xi'an Jiaotong University Homepage",
+        "desc": "The homepage of XJTU",
+        "url": "http://www.xjtu.edu.cn",
+        "status": "unknown"
+    }
+}]
